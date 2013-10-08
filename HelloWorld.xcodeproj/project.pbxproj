@@ -23,6 +23,7 @@
 		10908A8217D301E600C8B774 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10908A5D17D301E600C8B774 /* Foundation.framework */; };
 		10908A8A17D301E600C8B774 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10908A8817D301E600C8B774 /* InfoPlist.strings */; };
 		10908A8D17D301E600C8B774 /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10908A8C17D301E600C8B774 /* HelloWorldTests.m */; };
+		10A9C4581802905C0008116B /* View2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A9C4571802905C0008116B /* View2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		10908A8917D301E600C8B774 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		10908A8B17D301E600C8B774 /* HelloWorldTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldTests.h; sourceTree = "<group>"; };
 		10908A8C17D301E600C8B774 /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		10A9C4561802905C0008116B /* View2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View2ViewController.h; sourceTree = "<group>"; };
+		10A9C4571802905C0008116B /* View2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 		10908A6117D301E600C8B774 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				10A9C4571802905C0008116B /* View2ViewController.m */,
+				10A9C4561802905C0008116B /* View2ViewController.h */,
 				10908A6A17D301E600C8B774 /* HelloWorldAppDelegate.h */,
 				10908A6B17D301E600C8B774 /* HelloWorldAppDelegate.m */,
 				10908A7317D301E600C8B774 /* MainStoryboard.storyboard */,
@@ -208,6 +213,11 @@
 				CLASSPREFIX = HelloWorld;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Mary Wong";
+				TargetAttributes = {
+					10908A7D17D301E600C8B774 = {
+						TestTargetID = 10908A5617D301E600C8B774;
+					};
+				};
 			};
 			buildConfigurationList = 10908A5117D301E600C8B774 /* Build configuration list for PBXProject "HelloWorld" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -274,6 +284,7 @@
 				10908A6817D301E600C8B774 /* main.m in Sources */,
 				10908A6C17D301E600C8B774 /* HelloWorldAppDelegate.m in Sources */,
 				10908A7817D301E600C8B774 /* HelloWorldViewController.m in Sources */,
+				10A9C4581802905C0008116B /* View2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +390,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,6 +402,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HelloWorld/HelloWorld-Prefix.pch";
 				INFOPLIST_FILE = "HelloWorld/HelloWorld-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -448,6 +461,7 @@
 				10908A9217D301E600C8B774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10908A9317D301E600C8B774 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +470,7 @@
 				10908A9517D301E600C8B774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
