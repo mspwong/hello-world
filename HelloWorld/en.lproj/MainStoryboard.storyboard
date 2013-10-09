@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Greeting label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaX-6L-kBK">
-                                <rect key="frame" x="20" y="80" width="280" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Greeting label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaX-6L-kBK">
+                                <rect key="frame" x="107" y="130" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oi-lG-rnI">
-                                <rect key="frame" x="128" y="200" width="65" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oi-lG-rnI">
+                                <rect key="frame" x="128" y="190" width="65" height="30"/>
                                 <state key="normal" title="Say Hello">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="S3n-kZ-ebY">
-                                <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                <rect key="frame" x="114" y="60" width="92" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                                 <connections>
@@ -53,12 +53,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.5395980828199618" green="1" blue="0.5437867975470243" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="S3n-kZ-ebY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" id="Spa-6v-Lra"/>
-                            <constraint firstItem="gaX-6L-kBK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="141" id="Xzc-hy-ZrL"/>
-                            <constraint firstAttribute="trailing" secondItem="gaX-6L-kBK" secondAttribute="trailing" constant="20" symbolic="YES" id="eBJ-dC-eIw"/>
-                            <constraint firstAttribute="trailing" secondItem="S3n-kZ-ebY" secondAttribute="trailing" constant="20" symbolic="YES" id="gVD-Ya-e0D"/>
-                            <constraint firstItem="gaX-6L-kBK" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="pfP-vQ-WOn"/>
-                            <constraint firstItem="S3n-kZ-ebY" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="r8j-FM-0ci"/>
+                            <constraint firstItem="6oi-lG-rnI" firstAttribute="top" secondItem="gaX-6L-kBK" secondAttribute="bottom" constant="39" id="7V6-o1-BxR"/>
+                            <constraint firstAttribute="centerX" secondItem="6oi-lG-rnI" secondAttribute="centerX" id="DyL-PD-0Ln"/>
+                            <constraint firstItem="S3n-kZ-ebY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="60" id="PFt-sY-DST"/>
+                            <constraint firstItem="gaX-6L-kBK" firstAttribute="top" secondItem="S3n-kZ-ebY" secondAttribute="bottom" constant="40" id="Th9-zo-oN9"/>
+                            <constraint firstAttribute="centerX" secondItem="S3n-kZ-ebY" secondAttribute="centerX" id="oXA-zk-Mzz"/>
+                            <constraint firstAttribute="centerX" secondItem="gaX-6L-kBK" secondAttribute="centerX" id="uHG-vw-lj1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mdz-Yt-RrX"/>
@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="986" y="115"/>
         </scene>
-        <!--View3 View Controller-->
+        <!--View Controller-->
         <scene sceneID="D3P-pU-dMp">
             <objects>
-                <viewController id="3dQ-wc-5JM" customClass="View3ViewController" sceneMemberID="viewController">
+                <viewController id="3dQ-wc-5JM" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kue-zZ-07o"/>
                         <viewControllerLayoutGuide type="bottom" id="Kb0-an-fo4"/>
@@ -167,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="1401" y="114"/>
         </scene>
-        <!--View4 View Controller-->
+        <!--View Controller-->
         <scene sceneID="kDM-Ig-BG7">
             <objects>
-                <viewController id="Alb-5H-oUS" customClass="View4ViewController" sceneMemberID="viewController">
+                <viewController id="Alb-5H-oUS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vpq-YX-axp"/>
                         <viewControllerLayoutGuide type="bottom" id="qeW-rW-N8Q"/>
@@ -211,6 +211,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="RFJ-bq-9ID"/>
+        <segue reference="JWM-3U-4Ib"/>
     </inferredMetricsTieBreakers>
 </document>
